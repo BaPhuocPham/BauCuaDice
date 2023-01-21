@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./images/newbackground@2x.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  
+}
+.plateItem{
+  position: relative;
+}
+.plateItem > .plate{
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: center;
+}
+/* when open */
+.plateReverse{   
+  position: absolute;
+  top: -70%;
+  left: -10%;
+  object-fit: contain;
+  object-position: center;
+  transition: all 0.5s;
+}
+/* when close */
+/* .plateReverse{
+  top: -2%;
+  left: -10%;
+} */
+.diceItem{
+  position: absolute;
+  top: 30%;
+  left: 24%;
+  width: 50%;
+  flex-wrap: wrap;
+  display: flex;
+}
+#diceItem1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#diceItem2, #diceItem3{
+  width: 50%;
+}
+#diceItem2 img, #diceItem3 img{
+  display: block;
+  margin: 0 auto;
+}
+.buttonArea{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#shockBtn{
+  margin: 0 10px;
+}

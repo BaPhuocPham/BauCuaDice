@@ -1,0 +1,25 @@
+@media (max-width: 576px) {
+  .plateItem > .plate{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+  .plateReverse{
+    width: 70%;
+    top: -50%;
+    left: 14%;
+  }
+  .diceItem{
+    width: 40%;
+    left: 30%;
+  }
+  #diceItem1{
+    margin-bottom: 15px;
+  }
+  #diceItem1 img{
+    width: 25%;
+  }
+  .diceItem img{
+    width: 50%;
+  }
+}

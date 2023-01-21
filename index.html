@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/response.css">
+  <title>BauCuaCaCop</title>
+</head>
+<body>
+    <div class="wrapper">
+      <div class="plateItem">
+        <img class="plate" src="./images/plate.png" alt="">
+        <div class="diceItem">
+          <div id="diceItem1"><img id="dice1" class="dice" src="./images/ga.png" alt=""></div>
+          <div id="diceItem2"><img id="dice2" class="dice" src="./images/bau.png" alt=""></div>
+          <div id="diceItem3"><img id="dice3" class="dice" src="./images/huou.png" alt=""></div>
+        </div>
+        <img class="plateReverse" src="./images/plateReverse.png" alt="">
+        <div class="buttonArea">
+          <button id="openBtn" onclick="handleOpen()" type="button" class="btn btn-success">Open</button>
+          <button id="shockBtn" onclick="handleShock()" type="button" class="btn btn-warning">Shock</button>
+          <button id="closeBtn" onclick="handleClose()" type="button" class="btn btn-danger">Close</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
