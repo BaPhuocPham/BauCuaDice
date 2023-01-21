@@ -3,6 +3,7 @@ let plateReverse = document.querySelector(".plateReverse")
 let dice1 = document.getElementById("dice1")
 let dice2 = document.getElementById("dice2")
 let dice3 = document.getElementById("dice3")
+let shockBtn = document.getElementById("shockBtn")
 let isOpen = true
 let bauCuaArray = [
   "./images/huou.png",
@@ -78,6 +79,7 @@ function shock(){
 }
 
 function handleShock(){
+  shockBtn.disabled = true
   handleInterval = setInterval(function () {
     let firstDice = getRandomNumber()
     let secondDice = getRandomNumber()
@@ -94,6 +96,7 @@ function handleShock(){
       handleInterval = null
       timesInterval = 1
       console.log("removed")
+      shockBtn.disabled = false
     } else {
       timesInterval = timesInterval + 1
       console.log("timesInterval", timesInterval)
