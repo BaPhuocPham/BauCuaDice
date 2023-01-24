@@ -95,6 +95,13 @@ function handleShock(){
       clearInterval(handleInterval)
       handleInterval = null
       timesInterval = 1
+      Toastify({
+
+        text: "Shock done",
+        
+        duration: 1000
+        
+        }).showToast();
       console.log("removed")
       shockBtn.disabled = false
     } else {
